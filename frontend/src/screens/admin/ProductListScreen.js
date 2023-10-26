@@ -7,7 +7,7 @@ import {
   useGetProductsQuery,
   useCreateProductMutation,
 } from "../../slices/productsApiSlice";
-import { FaTimes, FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 const ProductListScreen = () => {
   const { data: products, isLoading, error, refetch } = useGetProductsQuery();
