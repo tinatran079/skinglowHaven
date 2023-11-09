@@ -61,7 +61,7 @@ const OrderScreen = () => {
   function onApprove(data, actions) {
     return actions.order.capture().then(async function (details) {
       try {
-        await payOrder({ orderId, details });
+        await payOrder({ orderId, details }).unwrap();
         refetch();
         toast.success("Payment Successful");
       } catch (err) {
@@ -204,7 +204,7 @@ const OrderScreen = () => {
                 ) : (
                   <div>
                     {/* <Button onClick={onApproveTest} style={{ marginBottom:'10px' }}>Test Pay Order</Button> */}
-                    <div>
+                    <div style={{ margin: "10px" }}>
                       <PayPalButtons
                         createOrder={createOrder}
                         onApprove={onApprove}
@@ -226,6 +226,7 @@ const OrderScreen = () => {
                     type="button"
                     className="btn btn-block"
                     onClick={deliverOrderHandler}
+                    style={{ margin: "10px" }}
                   >
                     Mark As Delivered
                   </Button>
