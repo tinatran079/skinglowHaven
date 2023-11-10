@@ -1,4 +1,4 @@
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import { useParams, Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard";
 import Loader from "../components/Loader";
@@ -17,7 +17,23 @@ const HomeScreen = () => {
   return (
     <>
       {!keyword ? (
-        <ProductCarousel />
+        <div style={{ position: "relative", textAlign: "left" }}>
+          <Image
+            src="https://t3.ftcdn.net/jpg/05/13/54/44/360_F_513544427_nQPUX288GG8WkEAokc1WSD8IVZBjHMPa.jpg"
+            alt="skincare"
+            style={{ width: "100%", height: "50%", marginBottom: "10px" }}
+          />
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              right: "20%",
+              transform: "translate(50%, -50%)",
+            }}
+          ></div>
+          <h1>Best Sellers</h1>
+          <ProductCarousel />
+        </div>
       ) : (
         <Link to="/" className="btn btn-light mb-2">
           Go Back
