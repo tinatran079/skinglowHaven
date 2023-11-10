@@ -33,16 +33,17 @@ const Header = () => {
   return (
     <header>
       <Navbar
-        style={{ backgroundColor: "#f2e9db" }}
+        // style={{ backgroundColor: "#f2e9db" }}
         variant="light"
         expand="md"
         collapseOnSelect
+        className="navbar"
       >
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand href="/">
-              <img src={logo} alt="ProShop" />
-              Proshop
+            <Navbar.Brand href="/" className="brand-font">
+              {/* <img src={logo} alt="ProShop" /> */}
+              SkinGlow Haven
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

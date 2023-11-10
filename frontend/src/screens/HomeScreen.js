@@ -19,9 +19,15 @@ const HomeScreen = () => {
       {!keyword ? (
         <div style={{ position: "relative", textAlign: "left" }}>
           <Image
-            src="https://t3.ftcdn.net/jpg/05/13/54/44/360_F_513544427_nQPUX288GG8WkEAokc1WSD8IVZBjHMPa.jpg"
+            src="https://asianbeautyessentials.com/cdn/shop/articles/Untitled_design.png?v=1672145217"
             alt="skincare"
-            style={{ width: "100%", height: "50%", marginBottom: "10px" }}
+            style={{
+              width: "100%",
+              height: "500px", // Set the desired height
+              objectFit: "cover", // or "contain" based on your preference
+              marginBottom: "10px",
+              imageRendering: "auto",
+            }}
           />
           <div
             style={{
