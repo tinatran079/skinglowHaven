@@ -69,8 +69,17 @@ const ProductScreen = () => {
 
   return (
     <>
-      <Link className="btn btn-light my-3" to="/">
-        Go Back
+      <Link
+        className="btn btn-light my-3"
+        to="/"
+        style={{
+          backgroundColor: "#c9855d",
+          borderColor: "#c9855d",
+          borderRadius: "0",
+          color: "white",
+        }}
+      >
+        GO BACK
       </Link>
 
       {isLoading ? (
@@ -99,7 +108,14 @@ const ProductScreen = () => {
                 </ListGroup.Item>
                 <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
                 <ListGroup.Item>
-                  Description: {product.description}
+                  <h4>Description</h4>
+                  <div
+                    style={{
+                      color: "#cd9ba2",
+                    }}
+                  >
+                    {product.description}
+                  </div>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -156,8 +172,14 @@ const ProductScreen = () => {
                       type="button"
                       disabled={product.countInStock === 0}
                       onClick={addToCartHandler}
+                      style={{
+                        backgroundColor: "white",
+                        borderColor: "#cf946f",
+                        borderRadius: "0",
+                        color: "#cf946f",
+                      }}
                     >
-                      Add to Cart
+                      ADD TO CART
                     </Button>
                   </ListGroup.Item>
                 </ListGroup>
@@ -166,7 +188,7 @@ const ProductScreen = () => {
           </Row>
           <Row className="review">
             <Col md={6}>
-              <h2>Reviews</h2>
+              <h2>Customer Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup variant="flush">
                 {product.reviews.map((review) => (
@@ -211,8 +233,14 @@ const ProductScreen = () => {
                         disabled={loadingProductReview}
                         type="submit"
                         variant="primary"
+                        style={{
+                          backgroundColor: "white",
+                          borderColor: "#cf946f",
+                          borderRadius: "0",
+                          color: "#cf946f",
+                        }}
                       >
-                        Submit
+                        SUBMIT
                       </Button>
                     </Form>
                   ) : (

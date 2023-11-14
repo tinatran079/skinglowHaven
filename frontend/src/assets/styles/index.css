@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto:wght@300;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Crimson+Text&family=Nunito+Sans:opsz,wght@6..12,300&family=Roboto+Serif:opsz,wght@8..144,300&family=Roboto+Slab:wght@300&family=Roboto:wght@300;500;700;900&display=swap');
 
 main {
   min-height: 80vh;
@@ -13,7 +13,7 @@ body {
 }
 
 .rating svg {
-  color: #fce2ae;
+  color: #cd9ba2;
 }
 
 .rating-text {
@@ -56,18 +56,18 @@ table th {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #c08e4f;
-  color: #f2e9db;
+  background: rgba(33,33,33,0.1);
+  color: #212121;
 }
 
 .navbar {
-  background-color: #f2e9db;
-  color: #9D7448;
+  background-color: #fcfbf9;
+  color: #212121;
 }
 
 h1 {
-  color: #9D7448;
-  font-family: 'Amiri', serif;
+  color: #202120;
+  font-family: 'Roboto Serif', serif;
 }
 
 .brand-font {
@@ -75,4 +75,11 @@ h1 {
   font-size: 30px;
   color: #63544a;
   font-weight: bold;
+}
+
+h2 {
+  color: #202120;
+  font-family: 'Roboto Serif', serif;
+  margin-top: 20px;
+  margin-bottom: 0;
 }

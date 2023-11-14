@@ -19,7 +19,7 @@ const HomeScreen = () => {
       {!keyword ? (
         <div style={{ position: "relative", textAlign: "left" }}>
           <Image
-            src="https://asianbeautyessentials.com/cdn/shop/articles/Untitled_design.png?v=1672145217"
+            src="https://beautyofjoseon.com/cdn/shop/files/0O8A5721_2.jpg?v=1682656133&width=1000"
             alt="skincare"
             style={{
               width: "100%",
@@ -37,7 +37,7 @@ const HomeScreen = () => {
               transform: "translate(50%, -50%)",
             }}
           ></div>
-          <h1>Best Sellers</h1>
+          <h2>Best Sellers</h2>
           <ProductCarousel />
         </div>
       ) : (
@@ -53,7 +53,7 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <h1>Latest Products</h1>
+          <h2>Latest Products</h2>
           <Row>
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
