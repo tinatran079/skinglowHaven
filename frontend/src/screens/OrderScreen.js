@@ -226,7 +226,13 @@ const OrderScreen = () => {
                     type="button"
                     className="btn btn-block"
                     onClick={deliverOrderHandler}
-                    style={{ margin: "10px" }}
+                    style={{
+                      backgroundColor: "white",
+                      borderColor: "#cf946f",
+                      borderRadius: "0",
+                      color: "#cf946f",
+                      margin: "10px",
+                    }}
                   >
                     Mark As Delivered
                   </Button>

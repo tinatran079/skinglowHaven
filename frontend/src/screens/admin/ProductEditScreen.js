@@ -176,7 +176,17 @@ const ProductEditScreen = () => {
               ></Form.Control>
             </Form.Group>
 
-            <Button type="submit" variant="primary" className="my-2">
+            <Button
+              type="submit"
+              variant="primary"
+              className="my-2"
+              style={{
+                backgroundColor: "white",
+                borderColor: "#cf946f",
+                borderRadius: "0",
+                color: "#cf946f",
+              }}
+            >
               Update
             </Button>
           </Form>

@@ -102,6 +102,12 @@ const CartScreen = () => {
                 className="btn-block"
                 disabled={cartItems.length === 0}
                 onClick={checkOutHandler}
+                style={{
+                  backgroundColor: "white",
+                  borderColor: "#cf946f",
+                  borderRadius: "0",
+                  color: "#cf946f",
+                }}
               >
                 Proceed To Checkout
               </Button>

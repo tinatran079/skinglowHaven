@@ -96,6 +96,12 @@ const RegisterScreen = () => {
           variant="primary"
           className="mt-2"
           disabled={isLoading}
+          style={{
+            backgroundColor: "white",
+            borderColor: "#cf946f",
+            borderRadius: "0",
+            color: "#cf946f",
+          }}
         >
           Register
         </Button>

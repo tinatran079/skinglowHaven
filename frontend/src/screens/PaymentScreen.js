@@ -47,7 +47,16 @@ const PaymentScreen = () => {
           </Col>
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button
+          type="submit"
+          variant="primary"
+          style={{
+            backgroundColor: "white",
+            borderColor: "#cf946f",
+            borderRadius: "0",
+            color: "#cf946f",
+          }}
+        >
           Continue
         </Button>
       </Form>

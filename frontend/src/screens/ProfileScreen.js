@@ -98,7 +98,17 @@ const ProfileScreen = () => {
             ></Form.Control>
           </Form.Group>
 
-          <Button type="submit" variant="primary" className="my-2">
+          <Button
+            type="submit"
+            variant="primary"
+            className="my-2"
+            style={{
+              backgroundColor: "white",
+              borderColor: "#cf946f",
+              borderRadius: "0",
+              color: "#cf946f",
+            }}
+          >
             Update
           </Button>
           {loadingUpdateProfile && <Loader />}
@@ -147,7 +157,16 @@ const ProfileScreen = () => {
                   </td>
                   <td>
                     <LinkContainer to={`/order/${order._id}`}>
-                      <Button className="btn-sm" variant="light">
+                      <Button
+                        className="btn-sm"
+                        variant="light"
+                        style={{
+                          backgroundColor: "white",
+                          borderColor: "#cf946f",
+                          borderRadius: "0",
+                          color: "#cf946f",
+                        }}
+                      >
                         Details
                       </Button>
                     </LinkContainer>
