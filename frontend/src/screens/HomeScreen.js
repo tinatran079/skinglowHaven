@@ -19,13 +19,13 @@ const HomeScreen = () => {
       {!keyword ? (
         <div style={{ position: "relative", textAlign: "left" }}>
           <Image
-            src="https://beautyofjoseon.com/cdn/shop/files/0O8A5721_2.jpg?v=1682656133&width=1000"
+            src="/images/banner.png"
             alt="skincare"
             style={{
               width: "100%",
-              height: "500px", // Set the desired height
+              height: "600px", // Set the desired height
               objectFit: "cover", // or "contain" based on your preference
-              marginBottom: "10px",
+              // marginBottom: "10px",
               imageRendering: "auto",
             }}
           />
