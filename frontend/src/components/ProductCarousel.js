@@ -12,20 +12,43 @@ const ProductCarousel = () => {
   ) : error ? (
     <Message variant="danger">{error}</Message>
   ) : (
-    <Carousel pause="hover" style={{ backgroundColor: "#f2f1f0" }}>
+    <Carousel pause="hover">
       {products.map((product) => (
-        <Carousel.Item key={product._id}>
-          <Link to={`/product/${product._id}`}>
-            <div style={{ width: "400px", height: "600px", margin: "auto" }}>
+        <Carousel.Item key={product._id} style={{ padding: "20px" }}>
+          <Link
+            to={`/product/${product._id}`}
+            style={{ textDecoration: "none", color: "#333" }}
+          >
+            <div
+              style={{
+                width: "100%",
+                height: "60vh",
+                margin: "auto",
+                overflow: "hidden",
+                padding: "20px",
+              }}
+            >
               <Image
                 src={product.image}
                 alt={product.name}
                 fluid
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "8px",
+                }}
               />
             </div>
-            <Carousel.Caption className="carousel-caption">
-              <h2>
+            <Carousel.Caption
+              className="carousel-caption"
+              style={{
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                borderRadius: "8px",
+                padding: "20px",
+              }}
+            >
+              <h2 style={{ color: "#fff", fontSize: "1.5rem" }}>
                 {product.name} (${product.price})
               </h2>
             </Carousel.Caption>

@@ -23,21 +23,14 @@ const HomeScreen = () => {
             alt="skincare"
             style={{
               width: "100%",
-              height: "600px", // Set the desired height
-              objectFit: "cover", // or "contain" based on your preference
-              // marginBottom: "10px",
+              // height: "600px",
+              objectFit: "cover",
+              marginBottom: 0,
               imageRendering: "auto",
+              opacity: 0.95,
             }}
           />
-          <div
-            style={{
-              position: "absolute",
-              top: "50%",
-              right: "20%",
-              transform: "translate(50%, -50%)",
-            }}
-          ></div>
-          <h2>Best Sellers</h2>
+          <h2 style={{ marginTop: "0" }}>Best Sellers</h2>
           <ProductCarousel />
         </div>
       ) : (
@@ -53,7 +46,7 @@ const HomeScreen = () => {
         </Message>
       ) : (
         <>
-          <h2>Latest Products</h2>
+          <h2 style={{ marginTop: "10px" }}>Latest Products</h2>
           <Row>
             {data.products.map((product) => (
               <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
